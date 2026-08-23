@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALADEEN - Restaurant</title>
+    <link rel="stylesheet" href="rest.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">ALADEEN</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Our Menus</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <h1>ALADEEN</h1>
+            <p>Where every meal is a celebration</p>
+            <a href="#menu" class="btn hero-btn">View Menu</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Our Restaurant</h2>
+            <p>"Your Oasis of Authentic Flavors"</p>
+            <button id="orderBtn" class="btn">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="food.jpg" alt="Falafel Sandwich" />
+                    <h3>Falafel Sandwich</h3>
+                    <p>Two slices of bread filled with vegetable and meat</p>
+                    <span class="price">$12.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="food2.jpg" alt="Lamb Tikka" />
+                    <h3>Lamb Tikka</h3>
+                    <p>Marinated lamb pieces grilled to perfection</p>
+                    <span class="price">$20.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="food3.jpg" alt="Fried Rice" />
+                    <h3>Fried Rice</h3>
+                    <p>With choices of variation available</p>
+                    <span class="price">$50.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to make a reservation? Get in touch.</p>
+            <div class="contact-grid">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>📞 <a href="tel:+9165042814">+91 65042814</a></p>
+                    <p>✉️ restaurant@gmail.com</p>
+                    <p>📍 Aladeen Restaurant & Cafe</p>
+                    <p>🕐 11:00 AM - 11:00 PM</p>
+                    <a href="https://wa.me/9165042814" class="btn whatsapp-btn">💬 WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ALADEEN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/9165042814" class="whatsapp-float" target="_blank">💬</a>
+<a href="tel:+9165042814" class="btn" style="background: #25d366; margin-top: 0.5rem;">📞 Call Now</a>
+
+
+    <script src="port.js"></script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0b3c5c6d7b%3A0x8f5e7c7d7d7d7d7d!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+
+<div class="social-links">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+</div>
+</body>
+</html>

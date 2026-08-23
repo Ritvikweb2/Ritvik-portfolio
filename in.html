@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELORIA - Interior Design</title>
+    <link rel="stylesheet" href="in.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+<button class="hamburger" id="hamburger">☰</button>
+            <div class="logo">ELORIA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+ 
+    </nav>
+<!-- Hero with Video Background -->
+<section id="hero">
+    <video autoplay loop muted playsinline id="hero-video">
+        <source src="my.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+        <div class="container">
+            <h1 style="font-family: 'Playfair Display', serif; font-weight: 600; letter-spacing: 4px; color: #fff;">ELORIA</h1>
+            <p>Luxury Interior Design</p>
+            <a href="#contact" class="btn">Get a Quote</a>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 60px 0; background: #f8f6f3;">
+    <div class="container">
+        <h2 style="text-align: center; font-weight: 300; margin-bottom: 2rem;">What Clients Say</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div style="background: #fff; padding: 2rem; border-radius: 8px; text-align: center;">
+                <p style="font-style: italic;">"ELORIA transformed our office space. Highly professional!"</p>
+                <p style="color: #b8a696; margin-top: 0.5rem;">— Priya Sharma, Business Owner</p>
+            </div>
+            <div style="background: #fff; padding: 2rem; border-radius: 8px; text-align: center;">
+                <p style="font-style: italic;">"Beautiful designs, on time delivery, within budget."</p>
+                <p style="color: #b8a696; margin-top: 0.5rem;">— Amit Patel, Homeowner</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Paragraph -->
+<section class="text-section">
+    <div class="container">
+        <p class="large-text">
+            ELORIA is where space becomes emotion. We design interiors that speak without words — quiet luxury, timeless form, and intentional detail. Every project is a balance of light, texture, and purpose, crafted for those who believe that home is not just a place, but a feeling.
+        </p>
+    </div>
+<<!-- Full Video (Perfect Size) -->
+<section class="video-section">
+    <div class="container">
+        <div class="video-wrapper">
+            <video controls muted playsinline class="tablet-video">
+                <source src="my1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2>Let's Create Something Beautiful</h2>
+        <p class="contact-sub">Fill in the details and we'll get back to you within 24 hours.</p>
+        
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Phone Number" required />
+            </div>
+            <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+            <button type="submit" class="btn submit-btn">Send Message →</button>
+        </form>
+    </div>
+</section>
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2026 ELORIA. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="in.js"></script>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+    💬
+</a>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="back-top">↑</button>
+<div id="loader"><div class="spinner"></div></div>
+</body>
+</html>
