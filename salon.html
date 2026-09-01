@@ -12,20 +12,21 @@
 
     <!-- Navbar -->
     <nav>
-        <div class="container">
-            <div class="logo">✦ SALON</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#shop">E-Shop</a></li>
-                <li><a href="#franchise">Franchise</a></li>
-                <li><a href="#academy">Academy</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#offers">Offers</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+        <button class="hamburger" id="hamburger">☰</button>
+        <div class="logo">✦ SALON</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#shop">E-Shop</a></li>
+            <li><a href="#franchise">Franchise</a></li>
+            <li><a href="#academy">Academy</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#offers">Offers</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Hero -->
     <section id="hero" style="background: linear-gradient(rgba(0,0,0,0.5)), url('salon.jpg'); background-size: cover; background-position: center;">
@@ -159,166 +160,5 @@
     </footer>
 
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salon Name</title>
-    <link rel="stylesheet" href="salon.css" />
- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <div class="logo">✦ SALON</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#shop">E-Shop</a></li>
-                <li><a href="#franchise">Franchise</a></li>
-                <li><a href="#academy">Academy</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#offers">Offers</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <section id="hero" style="background: linear-gradient(rgba(0,0,0,0.5)), url('salon.jpg'); background-size: cover; background-position: center;">
-        <div class="container">
-            <h1 style="font-family: 'Great Vibes', cursive; font-size: 4.5rem; color: #d4af37; text-shadow: 0 2px 20px rgba(0,0,0,0.3);">Because You Deserve the Best</h1>
-            <p>Walk in. Get styled. Walk out confident.
-
-</p>
-            <a href="#booking" class="btn">Book Appointment</a>
-        </div>
-    </section>
-
-    <!-- Quick Info Section -->
-<section id="quick-info">
-    <div class="container">
-        <div class="info-grid">
-            <div class="info-card">
-                <div class="info-icon">⏰</div>
-                <h3>Opening Hours</h3>
-                <p>Mon-Sat: 10am - 8pm</p>
-                <p>Sunday: Closed</p>
-            </div>
-            <div class="info-card">
-                <div class="info-icon">📍</div>
-                <h3>Visit Us</h3>
-                <p>Indore, India</p>
-                <a href="#" class="info-link">Get Directions →</a>
-            </div>
-            <div class="info-card">
-                <div class="info-icon">📸</div>
-                <h3>Follow Us</h3>
-                <p>@salonname</p>
-                <a href="#" class="info-link">Instagram →</a>
-            </div>
-            <div class="info-card">
-                <div class="info-icon">📘</div>
-                <h3>Connect</h3>
-                <p>/salonname</p>
-                <a href="#" class="info-link">Facebook →</a>
-            </div>
-        </div>
-    </div>
-</section>
-        
-<section class="split-section">
-    <!-- Gents Side -->
-    <div class="split-item">
-        <img src="s.jpg" alt="Gents" class="bg-image">
-        <h2 class="label">GENTS</h2>
-    </div>
-    <!-- Ladies Side -->
-    <div class="split-item">
-        <img src="ss.jpg" alt="Ladies" class="bg-image">
-        <h2 class="label">LADIES</h2>
-    </div>
-</section>
-
-    
-    
-    <!-- Our Services: Gents + Ladies -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-category">
-                    <h3>👔 Gents</h3>
-                    <ul>
-                        <li>Haircut - ₹399</li>
-                        <li>Beard Trim - ₹199</li>
-                        <li>Shave - ₹299</li>
-                        <li>Hair Color - ₹999</li>
-                    </ul>
-                </div>
-                <div class="service-category">
-                    <h3>👗 Ladies</h3>
-                    <ul>
-                        <li>Haircut - ₹599</li>
-                        <li>Hair Color - ₹1,499</li>
-                        <li>Facial - ₹799</li>
-                        <li>Manicure - ₹499</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section id="booking">
-        <div class="container">
-            <h2>Let's Not Wait for the Perfect Look</h2>
-            <p>Book an appointment now</p>
-            <form class="booking-form">
-                <input type="text" placeholder="Full Name" required />
-                <input type="email" placeholder="Email" required />
-                <input type="text" placeholder="City" required />
-                <select required>
-                    <option value="">Select Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                </select>
-                <select required>
-                    <option value="">Select Service Type</option>
-                    <option>Haircut</option>
-                    <option>Beard Trim</option>
-                    <option>Hair Color</option>
-                    <option>Facial</option>
-                </select>
-                <input type="date" required />
-                <input type="time" required />
-                <button type="submit" class="btn">Book Now</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>📞 +91 98765 43210</p>
-            <p>📧 salon@email.com</p>
-            <p>📍 Indore, India</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Salon Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
->>>>>>> e28ff5c4730651c010fab3318f302217f4fcccda
 </html>
+                    
