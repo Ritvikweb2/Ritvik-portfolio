@@ -1,0 +1,61 @@
+// ============================================
+// MOBILE MENU TOGGLE
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+        // Close menu by default on mobile
+        if (window.innerWidth <= 768) {
+            navLinks.classList.remove('active');
+        }
+
+        // Toggle menu on hamburger click
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('#navbar')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    }
+});
+
+// ============================================
+// SCROLL ANIMATION FOR PROJECTS & SERVICES
+// ============================================
+const cards = document.querySelectorAll('.project-card, .service-card');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, { threshold: 0.1 });
+
+cards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'all 0.6s ease';
+    observer.observe(card);
+});
+
+// ============================================
+// CONSOLE WELCOME
+// ============================================
+console.log('🚀 Ritvik Malviya - Web Developer');
+console.log('📞 Contact: +91 6263576359');
