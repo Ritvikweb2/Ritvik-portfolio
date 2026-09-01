@@ -1,230 +1,175 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALADEEN - Restaurant</title>
-    <link rel="stylesheet" href="rest.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <meta name="google-site-verification" content="sb34V4Wl0AKEB0HQuTx_ThTjmGQTZnyqcuI3_fBsy7M" />
+    <title>Ritvik Malviya | Web Developer</title>
+    <link rel="stylesheet" href="port.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="container nav-container">
-            <div class="logo">ALADEEN</div>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+<button class="hamburger" id="hamburger">☰</button>
+        <div class="container">
+            <div class="logo">Ritvik Malviya</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Our Menus</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">☰</button>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <h1>ALADEEN</h1>
-            <p>Where every meal is a celebration</p>
-            <a href="#menu" class="btn hero-btn">View Menu</a>
-        </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Our Restaurant</h2>
-            <p>"Your Oasis of Authentic Flavors"</p>
-            <button id="orderBtn" class="btn">Order Now</button>
+    <section id="home">
+    <div class="container">
+        <div class="hero">
+            <!-- Text Side -->
+            <div class="hero-text">
+                <p class="hero-tagline">Web Developer based in Indore</p>
+                <h1>Hi, I'm <span>Ritvik Malviya</span></h1>
+                <p class="hero-description">I build modern, responsive websites that help small businesses grow online.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            <!-- Image Side -->
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">portfolio.js</span>
+                    </div>
+                    <div class="code-body">
+                        <span class="line"><span class="keyword">function</span> <span class="function">buildWebsite</span>() {</span>
+                        <span class="line indent"><span class="keyword">return</span> <span class="string">"Let's Talk"</span>;</span>
+                        <span class="line">}</span>
+                        <span class="line blink">|</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <!-- Menu -->
-    <section id="menu" class="menu-section">
+    </div>
+</section>
+            
+    
+            
+    <!-- ABOUT -->
+    <section id="about">
         <div class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="food.jpg" alt="Falafel Sandwich" />
-                    <h3>Falafel Sandwich</h3>
-                    <p>Two slices of bread filled with vegetable and meat</p>
-                    <span class="price">$12.00</span>
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div>
+                    <p>I'm a web developer from Indore who builds modern, responsive websites for small businesses.</p>
+                    <p>I focus on creating sites that actually help businesses get customers—not just look pretty. My goal is to deliver clean, fast, and reliable websites that work perfectly on all devices.</p>
                 </div>
-                <div class="menu-item">
-                    <img src="food2.jpg" alt="Lamb Tikka" />
-                    <h3>Lamb Tikka</h3>
-                    <p>Marinated lamb pieces grilled to perfection</p>
-                    <span class="price">$20.00</span>
-                </div>
-                <div class="menu-item">
-                    <img src="food3.jpg" alt="Fried Rice" />
-                    <h3>Fried Rice</h3>
-                    <p>With choices of variation available</p>
-                    <span class="price">$50.00</span>
+                <div>
+                    <h3>My Toolkit</h3>
+                    <ul>
+                        <li>HTML &amp; CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                        <li>Git &amp; GitHub</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
+    <!-- SERVICES -->
+    <section id="services">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have a question or want to make a reservation? Get in touch.</p>
+            <h2>What I Build</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Website Design</h3>
+                    <p>Modern, professional websites that work on all devices.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Websites</h3>
+                    <p>For restaurants, salons, gyms, coaching centres, and local services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Friendly</h3>
+                    <p>Every site works perfectly on phones and tablets.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fast &amp; Reliable</h3>
+                    <p>Clean code, fast loading, hosted and deployed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / PORTFOLIO -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="projects-grid">
+                <a href="rest.html" class="project-link">
+                    <div class="project-card">
+                        <div class="project-placeholder">Restaurant</div>
+                        <h3>Restaurant Website</h3>
+                        <p>View Project →</p>
+                    </div>
+                </a>
+                <a href="salon.html" class="project-link">
+                    <div class="project-card">
+                        <div class="project-placeholder">Salon</div>
+                        <h3>Salon Website</h3>
+                        <p>View Project →</p>
+                    </div>
+                </a>
+                <a href="gym.html" class="project-link">
+                    <div class="project-card">
+                        <div class="project-placeholder">Gym</div>
+                        <h3>Gym Website</h3>
+                        <p>View Project →</p>
+                    </div>
+                </a>
+                <a href="in.html" class="project-link">
+                    <div class="project-card">
+                        <div class="project-placeholder">Interior</div>
+                        <h3>Interior Designer</h3>
+                        <p>View Project →</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
             <div class="contact-grid">
-                <form id="contactForm">
-                    <input type="text" id="name" placeholder="Your Name" required />
-                    <input type="email" id="email" placeholder="Your Email" required />
-                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <p>📞 <a href="tel:+9165042814">+91 65042814</a></p>
-                    <p>✉️ restaurant@gmail.com</p>
-                    <p>📍 Aladeen Restaurant & Cafe</p>
-                    <p>🕐 11:00 AM - 11:00 PM</p>
-                    <a href="https://wa.me/9165042814" class="btn whatsapp-btn">💬 WhatsApp Us</a>
+                <div>
+                    <p><strong>Email:</strong> ritikmalvi79@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 6263576359</p>
+                    <p><strong>Location:</strong> Indore, India</p>
+                    <a href="https://wa.me/916263576359" class="btn btn-primary">WhatsApp Me</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 ALADEEN. All rights reserved.</p>
+            <p>&copy; 2026 Ritvik Malviya. Built with ❤️</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/9165042814" class="whatsapp-float" target="_blank">💬</a>
-<a href="tel:+9165042814" class="btn" style="background: #25d366; margin-top: 0.5rem;">📞 Call Now</a>
-
-
     <script src="port.js"></script>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0b3c5c6d7b%3A0x8f5e7c7d7d7d7d7d!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-
-<div class="social-links">
-    <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-</div>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALADEEN - Restaurant</title>
-    <link rel="stylesheet" href="rest.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav>
-        <div class="container nav-container">
-            <div class="logo">ALADEEN</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Our Menus</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <h1>ALADEEN</h1>
-            <p>Where every meal is a celebration</p>
-            <a href="#menu" class="btn hero-btn">View Menu</a>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Our Restaurant</h2>
-            <p>"Your Oasis of Authentic Flavors"</p>
-            <button id="orderBtn" class="btn">Order Now</button>
-        </div>
-    </section>
-
-    <!-- Menu -->
-    <section id="menu" class="menu-section">
-        <div class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="food.jpg" alt="Falafel Sandwich" />
-                    <h3>Falafel Sandwich</h3>
-                    <p>Two slices of bread filled with vegetable and meat</p>
-                    <span class="price">$12.00</span>
-                </div>
-                <div class="menu-item">
-                    <img src="food2.jpg" alt="Lamb Tikka" />
-                    <h3>Lamb Tikka</h3>
-                    <p>Marinated lamb pieces grilled to perfection</p>
-                    <span class="price">$20.00</span>
-                </div>
-                <div class="menu-item">
-                    <img src="food3.jpg" alt="Fried Rice" />
-                    <h3>Fried Rice</h3>
-                    <p>With choices of variation available</p>
-                    <span class="price">$50.00</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have a question or want to make a reservation? Get in touch.</p>
-            <div class="contact-grid">
-                <form id="contactForm">
-                    <input type="text" id="name" placeholder="Your Name" required />
-                    <input type="email" id="email" placeholder="Your Email" required />
-                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <p>📞 <a href="tel:+9165042814">+91 65042814</a></p>
-                    <p>✉️ restaurant@gmail.com</p>
-                    <p>📍 Aladeen Restaurant & Cafe</p>
-                    <p>🕐 11:00 AM - 11:00 PM</p>
-                    <a href="https://wa.me/9165042814" class="btn whatsapp-btn">💬 WhatsApp Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ALADEEN. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/9165042814" class="whatsapp-float" target="_blank">💬</a>
-<a href="tel:+9165042814" class="btn" style="background: #25d366; margin-top: 0.5rem;">📞 Call Now</a>
-
-
-    <script src="port.js"></script>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0b3c5c6d7b%3A0x8f5e7c7d7d7d7d7d!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-
-<div class="social-links">
-    <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-</div>
-</body>
->>>>>>> e28ff5c4730651c010fab3318f302217f4fcccda
 </html>
