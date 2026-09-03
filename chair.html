@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDIO RM</title>
+    <link rel="stylesheet" href="chair.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+<!-- ===== RELOAD INDICATOR ===== -->
+<div class="reload-indicator">✦ RELOAD READY</div>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <p class="preloader-prompt">Click to enter</p>
+            <h1 class="preloader-name">STUDIO RM</h1>
+            <div class="preloader-status">
+                <span class="preloader-percent">66%</span>
+                <span class="preloader-label">Loading</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div id="main-content">
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="studio.html" class="nav-logo">STUDIO RM</a>
+                <ul class="nav-links">
+                    <li><a href="#chair" class="active">Chair</a></li>
+                    <li><a href="#car">Car</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span class="nav-theme">Default</span>
+                    <span class="nav-status">● System Active</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero-section" id="work">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>SCULPTING TECHNICAL PERFORMANCE<br />INTO IMMERSIVE DIGITAL ART.</h1>
+                    <p class="hero-sub">3D Web Transformation Studio</p>
+                    <div class="hero-cta">
+                        <a href="studio.html" class="btn-primary">Explore Work</a>
+                        <span class="hero-scroll">Scroll to discover ↓</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CHAIR ===== -->
+        <section id="chair" class="config-section">
+            <div class="config-layout">
+                <div class="config-visual">
+                    <div id="chair-container"></div>
+                    <div class="scene-badge">● Live 3D</div>
+                </div>
+                <div class="config-panel">
+                    <span class="tag">Collection 01</span>
+                    <h2>Florentine</h2>
+                    <p class="subtitle">Armchair · Handcrafted</p>
+                    <p class="price">€849</p>
+                    <div class="divider"></div>
+                    <div class="control-group">
+                        <label>Colour</label>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="#d4a373" style="background:#d4a373;"></button>
+                            <button class="color-btn" data-color="#2c2420" style="background:#2c2420;"></button>
+                            <button class="color-btn" data-color="#8b1e1e" style="background:#8b1e1e;"></button>
+                            <button class="color-btn" data-color="#1a1a2e" style="background:#1a1a2e;"></button>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label>Material</label>
+                        <div class="material-options">
+                            <button class="material-btn active" data-material="leather">Leather</button>
+                            <button class="material-btn" data-material="fabric">Fabric</button>
+                            <button class="material-btn" data-material="velvet">Velvet</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Inquire</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CAR ===== -->
+        <section id="car" class="config-section alt">
+            <div class="config-layout reverse">
+                <div class="config-panel">
+                    <span class="tag">Performance</span>
+                    <h2>V12</h2>
+                    <p class="subtitle">Supercar · 800 HP</p>
+                    <p class="price">€289,000</p>
+                    <div class="divider"></div>
+                    <div class="control-group">
+                        <label>Paint</label>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="#ff1a1a" style="background:#ff1a1a;"></button>
+                            <button class="color-btn" data-color="#0066ff" style="background:#0066ff;"></button>
+                            <button class="color-btn" data-color="#000000" style="background:#000000;"></button>
+                            <button class="color-btn" data-color="#ffffff" style="background:#ffffff; border:1px solid #333;"></button>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label>Finish</label>
+                        <div class="finish-options">
+                            <button class="finish-btn active" data-finish="metallic">Metallic</button>
+                            <button class="finish-btn" data-finish="matte">Matte</button>
+                            <button class="finish-btn" data-finish="pearl">Pearl</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Configure</button>
+                </div>
+                <div class="config-visual">
+                    <div id="car-container"></div>
+                    <div class="scene-badge">● Live 3D</div>
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- ===== TRUST BAR ===== -->
+<section class="trust-section">
+    <div class="container">
+        <p class="trust-label">Trusted by innovative brands</p>
+        <div class="trust-grid">
+            <span class="trust-item">✦ Studio</span>
+            <span class="trust-item">✦ Creative</span>
+            <span class="trust-item">✦ Digital</span>
+            <span class="trust-item">✦ Design</span>
+            <span class="trust-item">✦ Future</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process-section">
+    <div class="container">
+        <span class="tag centered">How we work</span>
+        <h2>From concept to 3D in 3 steps</h2>
+        <div class="process-grid">
+            <div class="process-card">
+                <span class="step-number">01</span>
+                <h3>Discovery</h3>
+                <p>We understand your vision, goals, and audience in 48 hours.</p>
+            </div>
+            <div class="process-card">
+                <span class="step-number">02</span>
+                <h3>Creation</h3>
+                <p>Our team builds your 3D experience with precision and artistry.</p>
+            </div>
+            <div class="process-card">
+                <span class="step-number">03</span>
+                <h3>Launch</h3>
+                <p>Optimized, tested, and deployed — ready for the world.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+    <div class="container">
+        <span class="tag centered">Testimonials</span>
+        <h2>What clients say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"The 3D configurator increased our conversion rate by 40%. Our customers love it."</p>
+                <p class="testimonial-author">— Sarah K., Furniture Brand</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Working with STUDIO RM was seamless. They understood our vision perfectly."</p>
+                <p class="testimonial-author">— Marcus R., Automotive</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"The attention to detail and quality of 3D work is outstanding."</p>
+                <p class="testimonial-author">— Elena V., Interior Design</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section">
+    <div class="container">
+        <span class="tag centered">FAQ</span>
+        <h2>Common questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>How long does a 3D project take?</h4>
+                <p>2–4 weeks for a single scene, 4–8 weeks for a full configurator.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What does a 3D website cost?</h4>
+                <p>Packages start from €2,500. Every project is bespoke.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is it mobile-friendly?</h4>
+                <p>Yes. Every 3D experience is optimized for all devices.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I update it myself?</h4>
+                <p>Yes. We provide a simple CMS or handover documentation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT / CTA ===== -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to transform<br />your brand in 3D?</h2>
+            <p>Get a free 3D concept within 48 hours.</p>
+            <form class="cta-form">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit" class="btn-primary">Start Your Project</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h3>STUDIO RM</h3>
+                        <p>3D Web Transformation Studio</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="studio.html">Portfolio</a>
+                        <a href="#chair">Chair</a>
+                        <a href="#car">Car</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">IG</a>
+                        <a href="#">LI</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <p class="footer-copy">© 2026 STUDIO RM. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="chair.js"></script>
+</body>
+</html>

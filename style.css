@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #050510;
+    font-family: 'Inter', sans-serif;
+}
+
+#canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    pointer-events: none;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.overlay h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-shadow: 0 0 80px rgba(0, 102, 255, 0.15);
+}
+
+.overlay h1 span {
+    font-weight: 700;
+    color: #0066ff;
+}
+
+.overlay .subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 6px;
+    opacity: 0.4;
+    margin-top: -8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    pointer-events: auto;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.overlay .btn {
+    pointer-events: auto;
+    background: transparent;
+    color: #fff;
+    padding: 12px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    margin-top: 0.5rem;
+}
+
+.overlay .btn:hover {
+    background: #0066ff;
+    border-color: #0066ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(0, 102, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2.8rem;
+        letter-spacing: 6px;
+    }
+    .overlay .subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+    }
+    .nav-links {
+        gap: 1.5rem;
+    }
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+/* ===== CINEMATIC PRE-LOADER ===== */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050510;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 1.2s ease, visibility 1.2s ease;
+    overflow: hidden;
+}
+
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Animated background */
+.cinematic-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at 30% 50%, rgba(0,102,255,0.05) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(136,136,255,0.03) 0%, transparent 60%);
+    animation: cinematicPulse 4s ease-in-out infinite;
+}
+
+@keyframes cinematicPulse {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(2deg); }
+}
+
+.cinematic-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, transparent 0%, rgba(0,102,255,0.02) 50%, transparent 100%),
+        repeating-linear-gradient(0deg, transparent, transparent 100px, rgba(255,255,255,0.01) 100px, transparent 101px);
+    animation: overlaySweep 8s linear infinite;
+}
+
+@keyframes overlaySweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.preloader-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Logo reveal */
+.logo-reveal {
+    margin-bottom: 1.5rem;
+    animation: logoPulse 3s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.logo-svg {
+    width: 120px;
+    height: 50px;
+    filter: drop-shadow(0 0 40px rgba(0,102,255,0.15));
+}
+
+.preloader-name {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #8888ff 50%, #0066ff 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerText 3s ease-in-out infinite;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 80px rgba(0,102,255,0.1);
+}
+
+@keyframes shimmerText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.preloader-title {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 6px;
+    opacity: 0.4;
+    margin-bottom: 2.5rem;
+}
+
+.preloader-bar {
+    width: 280px;
+    height: 2px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 2px;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.preloader-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+    animation: barShine 2s ease-in-out infinite;
+}
+
+@keyframes barShine {
+    0% { left: -50%; }
+    100% { left: 100%; }
+}
+
+.preloader-progress {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #0066ff, #8888ff, #0066ff);
+    background-size: 200% 100%;
+    border-radius: 2px;
+    transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    animation: progressShimmer 2s linear infinite;
+}
+
+@keyframes progressShimmer {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+}
+
+.preloader-status {
+    font-size: 0.7rem;
+    opacity: 0.25;
+    letter-spacing: 3px;
+    transition: opacity 0.3s ease;
+}
+
+/* Glitch text effect on load */
+@keyframes glitchText {
+    0%, 100% { transform: skew(0deg); }
+    20% { transform: skew(2deg); }
+    40% { transform: skew(-2deg); }
+    60% { transform: skew(1deg); }
+    80% { transform: skew(-1deg); }
+}
+
+.preloader-name.loading {
+    animation: shimmerText 3s ease-in-out infinite, glitchText 0.5s ease-in-out 1;
+}
+
+/* ===== FADE IN ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
