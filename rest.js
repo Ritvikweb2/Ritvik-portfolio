@@ -59,3 +59,12 @@ window.addEventListener('scroll', function() {
         nav.style.background = 'rgba(26, 26, 46, 0.95)';
         nav.style.boxShadow = 'none';
     }
+});// Preloader
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        setTimeout(function() {
+            preloader.classList.add('preloader-hidden');
+        }, 2000); // 2 seconds - feels premium
+    }
+});
