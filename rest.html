@@ -3,111 +3,238 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALADEEN - Restaurant</title>
+    <title>Spice & Soul | Fine Indian Dining</title>
     <link rel="stylesheet" href="rest.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- Preloader -->
+<div class="preloader">
+    <div class="preloader-content">
+        <div class="preloader-icon">🌿</div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+        <p class="preloader-text">Preparing your experience...</p>
+    </div>
+</div>
+
+
     <!-- Navbar -->
     <nav>
-        <div class="container nav-container">
-            <div class="logo">ALADEEN</div>
+        <div class="container">
+            <div class="logo">🌿 Spice & Soul</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Our Menus</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.zomato.com" target="_blank">Order on Zomato</a></li>
+                <li><a href="tel:+919876543210" class="nav-call">📞 Call</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">☰</button>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <h1>ALADEEN</h1>
-            <p>Where every meal is a celebration</p>
-            <a href="#menu" class="btn hero-btn">View Menu</a>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">✦ Est. 2012</span>
+                <h1>Where Flavor<br>Meets <span class="highlight">Tradition</span></h1>
+                <p>Authentic Indian cuisine crafted with love, using the freshest ingredients from local farms.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">
+                        <span>Explore Menu</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">Book a Table</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Signature Dishes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Our Restaurant</h2>
-            <p>"Your Oasis of Authentic Flavors"</p>
-            <button id="orderBtn" class="btn">Order Now</button>
+    <!-- Features -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2>Experience the <span class="highlight">Difference</span></h2>
+            <p>Every detail crafted to perfection for an unforgettable dining experience</p>
         </div>
-    </section>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🌱</div>
+                </div>
+                <h3>Fresh Ingredients</h3>
+                <p>Sourced daily from local farms for authentic taste</p>
+                <div class="feature-line"></div>
+                <span class="feature-link">Learn More →</span>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">👨‍🍳</div>
+                </div>
+                <h3>Expert Chefs</h3>
+                <p>15+ years of culinary expertise in every dish</p>
+                <div class="feature-line"></div>
+                <span class="feature-link">Learn More →</span>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🚀</div>
+                </div>
+                <h3>Free Delivery</h3>
+                <p>Hot & fresh food delivered to your doorstep</p>
+                <div class="feature-line"></div>
+                <span class="feature-link">Learn More →</span>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">⭐</div>
+                </div>
+                <h3>Rated 4.8★</h3>
+                <p>Over 500+ happy customers love our food</p>
+                <div class="feature-line"></div>
+                <span class="feature-link">Learn More →</span>
+            </div>
+        </div>
+    </div>
+</section>
+        
 
-    <!-- Menu -->
-    <section id="menu" class="menu-section">
+    <!-- Customer Reviews -->
+<section class="reviews">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Testimonials</span>
+            <h2>What Our <span class="highlight">Customers</span> Say</h2>
+            <p>Real stories from real people who love our food</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-quote-icon">"</div>
+                <div class="review-stars">★★★★★</div>
+                <p>"Best Indian food in town! The butter chicken is absolutely incredible. I've been coming here for years."</p>
+                <div class="review-divider"></div>
+                <div class="review-author">
+                    <span class="review-avatar">PS</span>
+                    <div>
+                        <div class="review-name">Priya Sharma</div>
+                        <div class="review-role">Regular Customer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote-icon">"</div>
+                <div class="review-stars">★★★★★</div>
+                <p>"Amazing ambiance and friendly staff. The biryani is a must-try! Highly recommend to everyone."</p>
+                <div class="review-divider"></div>
+                <div class="review-author">
+                    <span class="review-avatar">AP</span>
+                    <div>
+                        <div class="review-name">Amit Patel</div>
+                        <div class="review-role">Food Enthusiast</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote-icon">"</div>
+                <div class="review-stars">★★★★★</div>
+                <p>"Authentic flavors, generous portions, and reasonable prices. Love this place. My go-to restaurant!"</p>
+                <div class="review-divider"></div>
+                <div class="review-author">
+                    <span class="review-avatar">SR</span>
+                    <div>
+                        <div class="review-name">Sneha Reddy</div>
+                        <div class="review-role">Food Blogger</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- CTA -->
+    <section class="cta">
         <div class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="food.jpg" alt="Falafel Sandwich" />
-                    <h3>Falafel Sandwich</h3>
-                    <p>Two slices of bread filled with vegetable and meat</p>
-                    <span class="price">$12.00</span>
-                </div>
-                <div class="menu-item">
-                    <img src="food2.jpg" alt="Lamb Tikka" />
-                    <h3>Lamb Tikka</h3>
-                    <p>Marinated lamb pieces grilled to perfection</p>
-                    <span class="price">$20.00</span>
-                </div>
-                <div class="menu-item">
-                    <img src="food3.jpg" alt="Fried Rice" />
-                    <h3>Fried Rice</h3>
-                    <p>With choices of variation available</p>
-                    <span class="price">$50.00</span>
-                </div>
+            <div class="cta-content">
+                <span class="section-tag" style="background:rgba(255,255,255,0.15);"></span>
+                <h2>Ready for an <span class="highlight">Unforgettable</span> Meal?</h2>
+                <p>Book your table now and experience the taste of tradition</p>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have a question or want to make a reservation? Get in touch.</p>
-            <div class="contact-grid">
-                <form id="contactForm">
-                    <input type="text" id="name" placeholder="Your Name" required />
-                    <input type="email" id="email" placeholder="Your Email" required />
-                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <p>📞 <a href="tel:+9165042814">+91 65042814</a></p>
-                    <p>✉️ restaurant@gmail.com</p>
-                    <p>📍 Aladeen Restaurant & Cafe</p>
-                    <p>🕐 11:00 AM - 11:00 PM</p>
-                    <a href="https://wa.me/9165042814" class="btn whatsapp-btn">💬 WhatsApp Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 ALADEEN. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🌿 Spice & Soul</h3>
+                    <p>Authentic Indian cuisine since 2012. Made with love, served with joy.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Facebook">👍</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://www.zomato.com" target="_blank">Zomato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📞 <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    <p>💬 <a href="https://wa.me/919876543210">WhatsApp</a></p>
+                    <p>📍 Indore, India</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon-Sat: 11am - 10pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                    <p class="status-open">● Open Now</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Spice & Soul. All rights reserved. | Crafted with ❤️</p>
+            </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/9165042814" class="whatsapp-float" target="_blank">💬</a>
-<a href="tel:+9165042814" class="btn" style="background: #25d366; margin-top: 0.5rem;">📞 Call Now</a>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919876543210?text=Hi! I want to order from Spice & Soul" 
+       class="whatsapp-float" target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
 
-
-    <script src="port.js"></script>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0b3c5c6d7b%3A0x8f5e7c7d7d7d7d7d!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-
-<div class="social-links">
-    <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-</div>
+    <script src="rest.js"></script>
 </body>
+</html>

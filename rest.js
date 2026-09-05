@@ -1,72 +1,70 @@
-// ============================================
-// 1. MOBILE MENU TOGGLE
-// ============================================
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
+// Mobile Menu Toggle
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('nav');
+    const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', function(e) {
-            e.stopPropagation();
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('nav')) {
-                navLinks.classList.remove('active');
-            }
-        });
+    
+    if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
     }
 });
 
-// ============================================
-// 2. CONTACT FORM
-// ============================================
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        alert('Thank you, ' + name + '! We will get back to you soon.');
-        this.reset();
+// Counter Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const counters = document.querySelectorAll('.stat-number');
+    
+    counters.forEach(counter => {
+        const target = parseInt(counter.dataset.target);
+        let current = 0;
+        const increment = target / 50;
+        const duration = 2000;
+        const stepTime = duration / 50;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                counter.textContent = Math.round(current);
+                setTimeout(updateCounter, stepTime);
+            } else {
+                counter.textContent = target;
+            }
+        };
+        
+        // Start animation when element is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        
+        observer.observe(counter);
     });
-}
-
-// ============================================
-// 3. ORDER NOW BUTTON
-// ============================================
-const orderBtn = document.getElementById('orderBtn');
-if (orderBtn) {
-    orderBtn.addEventListener('click', function() {
-        document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
-    });
-}
-
-// ============================================
-// 4. SCROLL ANIMATION
-// ============================================
-const items = document.querySelectorAll('.menu-item, .about, .contact');
-
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, { threshold: 0.1 });
-
-items.forEach(function(item) {
-    item.style.opacity = '0';
-    item.style.transform = 'translateY(30px)';
-    item.style.transition = 'all 0.8s ease';
-    observer.observe(item);
 });
 
-console.log('🍽️ ALADEEN Restaurant - Website loaded');
+// Navbar background change on scroll
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.style.background = 'rgba(26, 26, 46, 0.98)';
+        nav.style.boxShadow = '0 2px 30px rgba(0,0,0,0.2)';
+    } else {
+        nav.style.background = 'rgba(26, 26, 46, 0.95)';
+        nav.style.boxShadow = 'none';
+    }
+});// Preloader
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        setTimeout(function() {
+            preloader.classList.add('preloader-hidden');
+        }, 2000); // 2 seconds - feels premium
+    }
+});

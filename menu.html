@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Spice & Soul</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">🌿 Spice & Soul</div>
+            <ul class="nav-links">
+                <li><a href="rest.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.zomato.com" target="_blank">Order on Zomato</a></li>
+<li><a href="tel:+919876543210" class="nav-call">📞 Call</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </nav>
+
+    <section class="menu-page">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Specials</span>
+                <h1>Signature <span class="highlight">Dishes</span></h1>
+                <p>Authentic recipes passed down through generations</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="food1.jpg" alt="Butter Chicken">
+                        <span class="menu-badge">Bestseller</span>
+                    </div>
+                    <div class="menu-details">
+                        <h3>Butter Chicken</h3>
+                        <p>Creamy tomato gravy with tender chicken, served with naan</p>
+                        <div class="menu-bottom">
+                            <span class="price">₹299</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="food2.jpg" alt="Biryani">
+                        <span class="menu-badge">Chef's Pick</span>
+                    </div>
+                    <div class="menu-details">
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Fragrant basmati rice layered with spiced meat and saffron</p>
+                        <div class="menu-bottom">
+                            <span class="price">₹399</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="food3.jpg" alt="Paneer Tikka">
+                        <span class="menu-badge">New</span>
+                    </div>
+                    <div class="menu-details">
+                        <h3>Paneer Tikka</h3>
+                        <p>Grilled cottage cheese marinated in aromatic spices</p>
+                        <div class="menu-bottom">
+                            <span class="price">₹499</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🌿 Spice & Soul</h3>
+                    <p>Authentic Indian cuisine since 2012. Made with love, served with joy.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rest.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📞 <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    <p>📍 Indore, India</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon-Sat: 11am - 10pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Spice & Soul. All rights reserved. | Crafted with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919876543210?text=Hi! I want to order from Spice & Soul" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Order on WhatsApp">
+    <span class="whatsapp-icon">💬</span>
+</a>
+</body>
+</html>

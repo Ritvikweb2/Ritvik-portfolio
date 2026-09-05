@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Spice & Soul</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+       <nav>
+    <div class="container">
+        <div class="logo">🌿 Spice & Soul</div>
+        <ul class="nav-links">
+            <li><a href="rest.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.zomato.com" target="_blank">Order on Zomato</a></li>
+            <li><a href="tel:+919876543210" class="nav-call">📞 Call</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+    </nav>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h1>We'd Love to <span class="highlight">Hear</span> From You</h1>
+                <p>Book a table, place an order, or just say hello</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>📍 Visit Us</h3>
+                    <p>123, MG Road,<br>Indore, Madhya Pradesh 452001</p>
+                    
+                    <h3>📞 Call Us</h3>
+                    <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                    
+                    <h3>💬 WhatsApp</h3>
+                    <p><a href="https://wa.me/919876543210">Chat with us on WhatsApp</a></p>
+                    
+                    <h3>🕐 Opening Hours</h3>
+                    <p>Mon - Sat: 11:00 AM - 10:00 PM<br>Sunday: 12:00 PM - 9:00 PM</p>
+
+                    <!-- Google Maps -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.8765!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd5c9b3b8a1d%3A0x3b7f5e3b8a1d2c4f!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1698765432100" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <h3>Send a Message</h3>
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <input type="tel" name="phone" placeholder="Phone Number" />
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message ✉️</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>🌿 Spice & Soul</h3>
+                <p>Authentic Indian cuisine since 2012. Made with love, served with joy.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Facebook">👍</a>
+                    <a href="#" aria-label="YouTube">▶️</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="rest.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.zomato.com" target="_blank">Zomato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📞 <a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p>💬 <a href="https://wa.me/919876543210">WhatsApp</a></p>
+                <p>📍 Indore, India</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <p>Mon-Sat: 11am - 10pm</p>
+                <p>Sunday: 12pm - 9pm</p>
+                <p class="status-open">● Open Now</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Spice & Soul. All rights reserved. | Crafted with ❤️</p>
+        </div>
+    </div>
+</footer> 
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919876543210?text=Hi! I want to order from Spice & Soul" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Order on WhatsApp">
+    <span class="whatsapp-icon">💬</span>
+</a>
+</body>
+</html>
